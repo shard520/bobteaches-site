@@ -1,3 +1,3 @@
 $("#videoClose").click(function(){
-    videoPlayer.pause();
+    player.pauseVideo();
 });

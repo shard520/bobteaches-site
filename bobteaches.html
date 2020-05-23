@@ -260,7 +260,7 @@
 				</div>
 
 				<div class="modal-body modal-video">
-					<video id="videoPlayer" class="big-video" controls="controls" src="video/fergsong.mp4"></video>
+					<div class="big-video" id="player"></div>
 				</div>
 
 			</div>
@@ -269,7 +269,7 @@
 
 	 <!--Image Modal for Telly 2, data target above to be set as id below (without the # symbol) -->
 	<div class="modal fade" id="isolation-song-chart" tabindex="-1" role="dialog" aria-labelledby="isolation-song-chartTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-portrait" role="document">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 
 				<div class="modal-header modal-title-bar align-items-center">
@@ -281,7 +281,7 @@
 
 				<div class="modal-body modal-image">
 
-					<div id="isolation-chords-carousel" class="carousel slide centered" data-ride="false" data-interval="600000">
+					<div id="isolation-chords-carousel" class="carousel slide centered big-video" data-ride="false" data-interval="600000">
 						<ol class="carousel-indicators">
 						<li data-target="#isolation-chords-carousel" data-slide-to="0" class="active"></li>
 						<li data-target="#isolation-chords-carousel" data-slide-to="1"></li>
@@ -314,5 +314,6 @@
 		</div>
 	</div>
 
+	<script src="vidEmbed.js" type="text/javascript"></script>
 	<script src="index.js" type="text/javascript"></script>
 </body>
