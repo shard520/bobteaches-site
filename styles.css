@@ -1,4 +1,3 @@
-
 body {
 	background-color: rgba(245, 222, 179, 1);
 	font-size: 1rem;
@@ -7,6 +6,10 @@ body {
 
 .centered {
 	margin: auto;
+}
+
+.main-content {
+	padding-bottom: 0!important;
 }
 
 /* Navigation */
@@ -119,11 +122,55 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 
+.telly-nav {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .telly-btn {
 	background-color: transparent;
 	border: none;
 	box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.5);
 	position: relative;
+}
+
+.telly-dropdown-btn {
+	border-radius: 0;
+}
+
+.prevBtn {
+	border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.nextBtn {
+	border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.telly-nav-btn, .dropdown-item.active, .dropdown-item:active {
+	background-color: rgba(199, 179, 245, 1);
+}
+
+.telly-dropdown-btn, .dropdown-item:focus, .dropdown-item:hover {
+	background-color: rgba(225, 245, 179, 1);
+	color: #000;
+	cursor: pointer;
+}
+
+.telly-nav-btn-off {
+	border-color: rgba(199, 179, 245, 1);
+	color: rgba(199, 179, 245, 1);
+}
+
+.telly-nav-btn-off:hover {
+	color: rgba(199, 179, 245, 1);
+	text-decoration: none;
+	cursor: default;
+}
+
+.dropdown-menu {
+	background-color: rgba(245, 222, 179, 1);
+	box-shadow: 1px 1px 3px rgba(199, 179, 245, 0.5), -1px -1px 3px rgba(199, 179, 245, 0.5) ,5px 5px 15px -4px rgba(0,0,0,0.5);
 }
 
 .telly-btn:hover {
@@ -164,6 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 .telly-text, .player-text {
 	font-size: 1.2rem;
 	text-align: center;
+	white-space: break-spaces;
+	padding-top: 10px;
 }
 
 /* Links */
@@ -370,7 +419,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .modal-landscape {
-	max-width: 75%;
+	max-width: 70%;
 }
 
 .modal-title-bar {
@@ -391,8 +440,3 @@ input[type=range]:focus::-ms-fill-upper {
 	padding-top: 56.25%;
     position: relative;
 }
-
-.modal-image {
-	padding-top: 70.92%;
-    position: relative;
-};
