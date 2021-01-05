@@ -23,10 +23,10 @@
 	<!-- Favicon -->
 	<link rel="icon" href="./images/BOB-favicon.ico">
 
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 	<!-- Bootstrap Scripts -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 		crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
 
 </head>
 
-<body>
+<body onload="modalMenuLinks()">
 
 	<!-- Nav Bar -->
 	<section class="sticky-top">
@@ -153,13 +153,12 @@
 
 				<div class="col-6 telly-grid">
 
-					<!-- Telly 1 button - Ferg's video -->
-
-					<!-- Button opens a modal, change the data-target below to a unique value for new modal content -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#modal-0">
-						<img class="telly-screen" src="https://img.youtube.com/vi/Q-F1cb2fOSk/0.jpg">
+					<!-- Telly 1 button -->
+					<!-- Button opens a modal -->
+					<button id="Q-F1cb2fOSk" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-0">
+						<img class="telly-screen" src="">
 						<img class="telly-outline" src="./images/telly-images/telly_outline.svg">
-						<p class="telly-text">Watch Fergus play his version of the song.</p>
+						<p class="telly-text"></p>
 					</button>
 
 				</div>
@@ -246,7 +245,7 @@
 
 				<div class="modal-header modal-title-bar align-items-center">
 
-					<h5 class="modal-title modal-heading">Time Together Performed by Ferg</h5>
+					<h5 class="modal-title modal-heading"></h5>
 					<button type="button" class="btn btn-outline-dark videoClose" data-dismiss="modal">Close</button>
 
 				</div>
@@ -266,8 +265,8 @@
 							</a>
 						  
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0">Watch Fergus play his version of the song.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1">Ferg's chord chart, learn to play along.</a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
 							</div>
 						</div>
 
@@ -334,8 +333,8 @@
 							</a>
 						  
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0">Watch Fergus play his version of the song.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1">Ferg's chord chart, learn to play along.</a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
 							</div>
 						</div>
 
@@ -370,7 +369,9 @@
 			});
 		};
 	</script>
-	<script src="./pauseVideos.js" type="text/javascript"></script>
+	
+	<script src="./js/pauseVideos.js" type="text/javascript"></script>
 	<script src="./js/modalNav.js" type="text/javascript"></script>
+	<script src="./js/youtubeData.js"></script>
 </body>
 </html>

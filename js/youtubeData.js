@@ -27,25 +27,25 @@
 
 }());
 
-// Called on body load, populates modal dropdown menus with video titles
+// Called on body load, populates modal dropdown menus with content titles
 function modalMenuLinks () {
-	// Select all elements from buttons containing video titles
-	const vidTitleElement = document.querySelectorAll(".telly-text")
+	// Select all elements from buttons containing content titles
+	const contentTitleElement = document.querySelectorAll(".telly-text")
 	// Select all dropdown menus inside modals
 	const modalMenus = document.querySelectorAll('.dropup');
-	const vidTitles = [];
+	const contentTitles = [];
 	
-	// Populate array with the text of each video title
-	for (i = 0; i < vidTitleElement.length; i++) {
-		const currentTitle = vidTitleElement[i].innerText;
-		vidTitles.push(currentTitle);
+	// Populate array with the text of each content item title
+	for (i = 0; i < contentTitleElement.length; i++) {
+		const currentTitle = contentTitleElement[i].innerText;
+		contentTitles.push(currentTitle);
 	};
 
 	// Select each indivdual modal dropdown and then all subsequent links inside
 	for (i = 0; i < modalMenus.length; i++) {
 		const modalLinks = modalMenus[i].children[1].children;
 
-		// Apply title for each video from titles array
+		// Apply title for each content item from titles array
 		for (link = 0; link < modalLinks.length; link ++) {
 			modalLinks[link].innerText = vidTitles[link];
 		};
