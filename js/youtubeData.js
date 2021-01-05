@@ -47,7 +47,7 @@ function modalMenuLinks () {
 
 		// Apply title for each content item from titles array
 		for (link = 0; link < modalLinks.length; link ++) {
-			modalLinks[link].innerText = vidTitles[link];
+			modalLinks[link].innerText = contentTitles[link];
 		};
 	};
 };
