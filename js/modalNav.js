@@ -4,10 +4,10 @@
 	for(i = 0; i < modals.length; i++){
 				
 		// for active modal, select matching link in modal nav
-		const activeModalLink = modals[i].children[0].children[0].children[2].children[0].children[1].children[1].children[i];
+		const activeModalLink = modals[i].getElementsByClassName('dropdown-menu')[0].children[i];
 		
 		// for active modal, select modal nav-bar
-		const activeModalNav = modals[i].children[0].children[0].children[2].children[0].children;
+		const activeModalNav = modals[i].getElementsByClassName('telly-nav')[1].children
 		
 		// populate prev/next buttons with neighbouring data-targets
 		const prev = i - 1;

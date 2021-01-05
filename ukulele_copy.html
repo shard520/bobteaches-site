@@ -23,10 +23,10 @@
 	<!-- Favicon -->
 	<link rel="icon" href="./images/BOB-favicon.ico">
 
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 	<!-- Bootstrap Scripts -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 		crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
 
 </head>
 
-<body>
+<body onload="modalMenuLinks()">
 
 	<!-- Nav Bar -->
 	<section class="sticky-top">
@@ -157,39 +157,38 @@
 
 				<div class="col-6 telly-grid">
 
-					<!-- Telly 1 button - Ukulele Intro Part 1 -->
-
+					<!-- Telly 1 button -->
 					<!-- Button opens a modal -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#modal-0">
-						<img class="telly-screen" src="https://img.youtube.com/vi/CghohXhMZ04/0.jpg">
+					<button id="CghohXhMZ04" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-0">
+						<img class="telly-screen" src="">
 						<img class="telly-outline" src="./images/telly-images/telly_outline.svg">
-						<p class="telly-text">Intro Part 1: Open Strings.</p>
+						<p class="telly-text"></p>
+					</button>
+					
+
+
+				</div>
+
+				<div class="col-6 telly-grid">
+
+					<!-- Telly 2 button -->
+					<!-- Button opens a modal -->
+					<button id="pqsnwppS3SU" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-1">
+						<img class="telly-screen" src="">
+						<img class="telly-outline" src="./images/telly-images/telly_outline.svg">
+						<p class="telly-text"></p>
 					</button>
 
 				</div>
 
 				<div class="col-6 telly-grid">
 
-					<!-- Telly 2 button - Ukulele Intro Part 2 -->
-
+					<!-- Telly 3 button -->
 					<!-- Button opens a modal -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#modal-1">
-						<img class="telly-screen" src="https://img.youtube.com/vi/pqsnwppS3SU/0.jpg">
+					<button id="Sa6yJZgxJdo" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-2">
+						<img class="telly-screen" src="">
 						<img class="telly-outline" src="./images/telly-images/telly_outline.svg">
-						<p class="telly-text">Intro Part 2: Fretting D or Re.</p>
-					</button>
-
-				</div>
-
-				<div class="col-6 telly-grid">
-
-					<!-- Telly 3 button - Ukulele Intro Part 3 -->
-
-					<!-- Button opens a modal -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#modal-2">
-						<img class="telly-screen" src="https://img.youtube.com/vi/Sa6yJZgxJdo/0.jpg">
-						<img class="telly-outline" src="./images/telly-images/telly_outline.svg">
-						<p class="telly-text">Intro Part 3: Playing F or Fa.</p>
+						<p class="telly-text"></p>
 					</button>
 
 				</div>
@@ -197,13 +196,12 @@
 
 				<div class="col-6 telly-grid">
 
-					<!-- Telly 4 button - Tuning Notes Video -->
-
+					<!-- Telly 4 button -->
 					<!-- Button opens a modal -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#modal-3">
-						<img class="telly-screen" src="https://img.youtube.com/vi/V6q-zPAK1SY/0.jpg">
+					<button id="V6q-zPAK1SY" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-3">
+						<img class="telly-screen" src="">
 						<img class="telly-outline" src="./images/telly-images/telly_outline.svg">
-						<p class="telly-text">Intro Part 4: Playing Ti and another Do.</p>
+						<p class="telly-text"></p>
 					</button>
 
 				</div>
@@ -214,14 +212,14 @@
 
 	</div>
 
-	<!-- Ukulele Intro Part 1 Video Modal for Telly 1 -->
+	<!-- Modal for Telly 1 -->
 	<div class="modal fade" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt1-vid-Title" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
 				<div class="modal-header modal-title-bar align-items-center">
 
-					<h5 class="modal-title modal-heading">Introduction to Ukulele Part 1: Open Strings</h5>
+					<h5 class="modal-title modal-heading"></h5>
 					<button type="button" class="btn btn-outline-dark videoClose" data-dismiss="modal">Close</button>
 					
 				</div>
@@ -241,10 +239,10 @@
 							</a>
 						  
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0">Intro Part 1: Open Strings.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1">Intro Part 2: Fretting D or Re.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2">Intro Part 3: Playing F or Fa.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3">Intro Part 4: Playing Ti and another Do.</a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
 							</div>
 						</div>
 
@@ -256,14 +254,14 @@
 		</div>
 	</div>
 
-	<!-- Ukulele Intro Part 2 Video Modal for Telly 2 -->
+	<!-- Video Modal for Telly 2 -->
 	<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt2-vid-Title" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
 				<div class="modal-header modal-title-bar align-items-center">
 
-					<h5 class="modal-title modal-heading">Introduction Part 2: Your first fretted note D or Re</h5>
+					<h5 class="modal-title modal-heading"></h5>
 					<button type="button" class="btn btn-outline-dark videoClose" data-dismiss="modal">Close</button>
 
 				</div>
@@ -283,10 +281,10 @@
 							</a>
 						  
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0">Intro Part 1: Open Strings.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1">Intro Part 2: Fretting D or Re.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2">Intro Part 3: Playing F or Fa.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3">Intro Part 4: Playing Ti and another Do.</a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
 							</div>
 						</div>
 
@@ -299,14 +297,14 @@
 		</div>
 	</div>
 
-	<!-- Ukulele Intro Part 3 Video Modal for Telly 3 -->
+	<!-- Video Modal for Telly 3 -->
 	<div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt3-vid-Title" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
 				<div class="modal-header modal-title-bar align-items-center">
 
-					<h5 class="modal-title modal-heading">Introduction Part 3: Playing F or Fa</h5>
+					<h5 class="modal-title modal-heading"></h5>
 					<button type="button" class="btn btn-outline-dark videoClose" data-dismiss="modal">Close</button>
 
 				</div>
@@ -326,10 +324,10 @@
 							</a>
 						  
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0">Intro Part 1: Open Strings.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1">Intro Part 2: Fretting D or Re.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2">Intro Part 3: Playing F or Fa.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3">Intro Part 4: Playing Ti and another Do.</a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
 							</div>
 
 						</div>
@@ -343,14 +341,14 @@
 		</div>
 	</div>
 
-	<!-- How To Tune Video Modal for Telly 4, data target above to be set as id below (without the # symbol) -->
+	<!-- Video Modal for Telly 4 -->
 	<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt4-vid-Title" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
 				<div class="modal-header modal-title-bar align-items-center">
 
-					<h5 class="modal-title modal-heading">Introduction Part 4: Playing Ti and another Do</h5>
+					<h5 class="modal-title modal-heading"></h5>
 					<button type="button" class="btn btn-outline-dark videoClose" data-dismiss="modal">Close</button>
 
 				</div>
@@ -370,10 +368,10 @@
 							</a>
 						  
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0">Intro Part 1: Open Strings.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1">Intro Part 2: Fretting D or Re.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2">Intro Part 3: Playing F or Fa.</a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3">Intro Part 4: Playing Ti and another Do.</a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
 							</div>
 
 						</div>
@@ -441,7 +439,9 @@
 		};
 	</script>
 
-	<script src="./pauseVideos.js" type="text/javascript"></script>
+	
+	<script src="./js/pauseVideos.js" type="text/javascript"></script>
 	<script src="./js/modalNav.js" type="text/javascript"></script>
+	<script src="./js/youtubeData.js"></script>
 </body>
 </html>
