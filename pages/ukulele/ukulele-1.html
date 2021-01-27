@@ -69,16 +69,16 @@
 				<div class="container-fluid blackboard">
 
 					<div class="blackboard-inner">
-						<h3 class="blackboard-heading">Welcome to the Ukulele section!</h3>
-						<p>Ukulele is a fantastic instrument. Originating from Hawaii, the Ukulele has recently enjoyed quite a renaissance.</p>
-						<p>In many ways the ukulele behaves like a guitar and is a great starting point for little hands! Big hands are just as welcome though, just about anyone can learn the Ukulele, you just need a little time and a little dedication.</p>
-						<p>The first videos will show you how to tune and play along with the open strings. There is also a player which will let you hear the notes to tune to.</p>
-						<p>When you are in tune, head over to the next lesson to learn how to play your first scale!</p>
-						<p>The Three Tellys are:</p>
+						<h3 class="blackboard-heading">The C Major Scale on Ukulele</h3>
+						<p>Now that you have tuned your instrument it's time to make some music.</p>
+						<p>Scales are the foundation of all music, some are more popular than others. The major scale is a great starting point.</p>
+						<p>These four videos will guide you through your first notes to play a C major scale.</p>
+						<p>The Four Tellys are:</p>
 						<ol>
-							<li>Tuning How To</li>
-							<li>Play Along Open Strings</li>
-							<li>Audio Tuning Notes</li>
+							<li>Introduction Part 1: Open strings</li>
+							<li>Introduction Part 2: Your first fretted note D or Re</li>
+							<li>Introduction Part 3: Playing F or Fa</li>
+							<li>Introduction Part 4: Playing Ti and another Do</li>
 						</ol>
 						<p>Have Fun!</p>
 						<p>Bob</p>
@@ -95,7 +95,7 @@
 
 			<div class="col-12 telly-grid">
 				<div class="telly-nav">
-					<a class="btn telly-nav-btn-off prevBtn" disabled>Prev.</a>
+					<a class="btn telly-nav-btn prevBtn" href="/ukulele.html">Prev.</a>
 					
 					<div class="dropdown show">
 						<a class="btn telly-dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,7 +109,7 @@
 					  </div>
 
 
-					<a class="btn telly-nav-btn nextBtn" href="pages/ukulele/ukulele-1.html">Next</a>
+					<a class="btn telly-nav-btn-off nextBtn" disabled>Next</a>
 				</div>
 			</div>
 
@@ -119,70 +119,49 @@
 
 					<!-- Telly 1 button -->
 					<!-- Button opens a modal -->
-					<button id="TkdhLKiKIuA" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-0">
+					<button id="CghohXhMZ04" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-0">
 						<img class="telly-screen" src="">
 						<img class="telly-outline" src="/images/telly-images/telly_outline.svg">
-						<p class="telly-text">How to tune the Ukulele</p>
+						<p class="telly-text">Introduction Part 1: Open strings</p>
 					</button>
 					
 				</div>
 
 				<div class="col-6 telly-grid">
 
-					<!-- Telly 2 button - Tuning Notes Video -->
-
-					<!-- Button opens a modal, change the data-target below to a unique value for new modal content -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#Tuning-Notes-Video">
-						<!-- Change the src below for a new telly image -->
-						<img class="telly-screen" src="/images/telly-images/uke_screen.svg">
+					<!-- Telly 2 button -->
+					<!-- Button opens a modal -->
+					<button id="pqsnwppS3SU" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-1">
+						<img class="telly-screen" src="">
 						<img class="telly-outline" src="/images/telly-images/telly_outline.svg">
-						<p class="telly-text">Play Along Open Strings</p>
+						<p class="telly-text">Introduction Part 2: Your first fretted note D or Re</p>
 					</button>
 
 				</div>
 
 				<div class="col-6 telly-grid">
-					
-					<!-- Telly 3 - Tuning Notes Player -->
 
-					<!-- Audio Player -->
-					<div class="audio-player">
-						<div class="play-container text-center p-2 pt-3">
-							<div class="step-back">
-								<i class="fas fa-step-backward audio-icon" id="backBtn"></i>
-							</div>
-							<div class="play-pause">
-								<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
-							</div>
-						</div>
+					<!-- Telly 3 button -->
+					<!-- Button opens a modal -->
+					<button id="Sa6yJZgxJdo" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-2">
+						<img class="telly-screen" src="">
+						<img class="telly-outline" src="/images/telly-images/telly_outline.svg">
+						<p class="telly-text">Introduction Part 3: Playing F or Fa</p>
+					</button>
 
-						<div class="progress-container text-center p-2">
-							<progress class="" id="seekObj" value="0" max="1"></progress>
-						</div>
-						
-						<small class="start-time"></small>
-						<small class="end-time"></small>
-						
-						<div id="vol-container" class=" d-flex justify-content-center align-items-center">
-							<div class="vol-dwn-container vol-ctrls">
-								<i class="fa fa-volume-down audio-icon p-2" id="volDown"></i>
-							</div>
-							<input type="range" id="volume" class="vol-slider p-1" min="0" max="100" value="50" oninput="volSlider()">
-							<div class="vol-up-container vol-ctrls">
-								<i class="fa fa-volume-up audio-icon p-2" id="volUp"></i>
-							</div>
-						</div>
+				</div>
 
-						<p class="player-text p-2">Listen to the notes to tune to.</p>
 
-						<audio id="audioPlayer" ontimeupdate="initProgressBar()">
-							<!-- Change the src below for a new song -->
-							<source src="" type="audio/mp3">
-						</audio>
-						<script src="/js/audioPlayer.js" type="text/javascript"></script>
+				<div class="col-6 telly-grid">
 
-					</div>
-					
+					<!-- Telly 4 button -->
+					<!-- Button opens a modal -->
+					<button id="V6q-zPAK1SY" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-3">
+						<img class="telly-screen" src="">
+						<img class="telly-outline" src="/images/telly-images/telly_outline.svg">
+						<p class="telly-text">Introduction Part 4: Playing Ti and another Do</p>
+					</button>
+
 				</div>
 
 			</div>
@@ -228,7 +207,7 @@
 	</div>
 
 	<!-- Video Modal for Telly 2 -->
-	<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt2-vid-Title" aria-hidden="true">
+	<div class="modal fade modal-backdrop-close" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt2-vid-Title" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
@@ -265,6 +244,84 @@
 		</div>
 	</div>
 
+	<!-- Video Modal for Telly 3 -->
+	<div class="modal fade modal-backdrop-close" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt3-vid-Title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
+			<div class="modal-content bg-none">
+
+				<div class="modal-body modal-video">
+					<div class="big-video" id="player3"></div>
+				</div>
+
+				<div class="modal-footer modal-title-bar telly-nav">
+
+					<div class="telly-nav">
+						<a class="btn telly-nav-btn prevBtn" data-dismiss="modal" data-toggle="modal" data-target="">Prev.</a>
+						
+						<div class="dropdown dropup show">
+							<a class="btn telly-dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Browse Videos
+							</a>
+						  
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
+							</div>
+
+						</div>
+
+						<a class="btn telly-nav-btn nextBtn" data-dismiss="modal" data-toggle="modal" data-target="">Next</a>
+					</div>
+
+					<button type="button" class="btn btn-outline-dark modal-close" data-dismiss="modal">Close</button>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Video Modal for Telly 4 -->
+	<div class="modal fade modal-backdrop-close" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt4-vid-Title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
+			<div class="modal-content bg-none">
+
+				<div class="modal-body modal-video">
+					<div class="big-video" id="player4"></div>
+				</div>
+
+				<div class="modal-footer modal-title-bar telly-nav">
+
+					<div class="telly-nav">
+						<a class="btn telly-nav-btn prevBtn" data-dismiss="modal" data-toggle="modal" data-target="">Prev.</a>
+						
+						<div class="dropdown dropup show">
+							<a class="btn telly-dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Browse Videos
+							</a>
+						  
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
+								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
+							</div>
+
+						</div>
+
+						<a class="btn telly-nav-btn nextBtn" data-dismiss="modal" data-toggle="modal" data-target="">Next</a>
+					</div>
+
+					<button type="button" class="btn btn-outline-dark modal-close" data-dismiss="modal">Close</button>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 	<script>
 		// 2. This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');
@@ -282,7 +339,7 @@
 
 		function onYouTubeIframeAPIReady() {
 			player1 = new YT.Player('player1', {
-				videoId: 'TkdhLKiKIuA',
+				videoId: 'CghohXhMZ04',
 				host: 'https://www.youtube-nocookie.com',
 				origin: 'https://www.bobteaches.com/',
 				playerVars: {

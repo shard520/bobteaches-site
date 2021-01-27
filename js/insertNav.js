@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="col nav-top-layer">
-			<a class="navbar-brand p-0 m-0" href="./index.html"><img class="brand-logo" src="./images/bob-teaches-logo.svg"><h4 class="brand-text align-middle d-none d-md-inline-block">teaches.com</h4><img class="brand-logo d-none d-md-inline-block" src="./images/bob-teaches-logo.svg"></a>
+			<a class="navbar-brand p-0 m-0" href="/index.html"><img class="brand-logo" src="/images/bob-teaches-logo.svg"><h4 class="brand-text align-middle d-none d-md-inline-block">teaches.com</h4><img class="brand-logo d-none d-md-inline-block" src="/images/bob-teaches-logo.svg"></a>
 		</div>
 
 		<div class="col nav-top-layer pr-0">
@@ -34,19 +34,19 @@
 	<div class="collapse navbar-collapse nav-top-layer dropdown-flex" id="navMenu">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="./index.html">Home</a>
+				<a class="nav-link" href="/index.html">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="./guitar.html">Guitar</a>
+				<a class="nav-link" href="/guitar.html">Guitar</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="./bass.html">Bass</a>
+				<a class="nav-link" href="/bass.html">Bass</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="./ukulele.html">Ukulele</a>
+				<a class="nav-link" href="/ukulele.html">Ukulele</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="./bobteaches.html">bobteaches@Home</a>
+				<a class="nav-link" href="/bobteaches.html">bobteaches@Home</a>
 			</li>
 		</ul>
 	</div>

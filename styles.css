@@ -458,6 +458,8 @@ input[type=range]:focus::-ms-fill-upper {
 .modal-heading {
 	font-size: 1.5rem;
 	color: rgba(0,0,0,0.7);
+	width: 100%;
+    text-align: center;
 }
 
 .modal-image, .modal-video {
@@ -467,4 +469,9 @@ input[type=range]:focus::-ms-fill-upper {
 .modal-video {
 	padding-top: 56.25%;
     position: relative;
+}
+
+.modal-close {
+	position: absolute;
+    right: .75rem;
 }
