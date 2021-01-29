@@ -1,8 +1,12 @@
 :root {
+	/* COLORS */
 	--box-shadow-main: 5px 5px 15px -4px rgba(0,0,0,0.5);
 	--main-background-color: rgba(245, 222, 179, 1);
 	--purple-accent-color: rgba(199, 179, 245, 1);
 	--green-accent-color: rgba(225, 245, 179, 1);
+
+	/* FONTS */
+	--display-font: 'Indie Flower', cursive;
 }
 
 body {
@@ -119,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blackboard-inner {
-	font-family: 'Indie Flower', cursive;
+	font-family: var(--display-font);
 	font-size: 1.5rem;
 	color: rgba(255, 255, 255, 1);
 	background-color: slategray;
@@ -176,22 +180,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .telly-nav-btn, .dropdown-item.active, .dropdown-item:active {
-	background-color: rgba(199, 179, 245, 1);
+	background-color: var(--purple-accent-color);
 }
 
 .telly-dropdown-btn, .dropdown-item:focus, .dropdown-item:hover {
-	background-color: rgba(225, 245, 179, 1);
+	background-color: var(--green-accent-color);
 	color: #000;
 	cursor: pointer;
 }
 
 .telly-nav-btn-off {
-	border-color: rgba(199, 179, 245, 1);
-	color: rgba(199, 179, 245, 1);
+	border-color: var(--purple-accent-color);
+	color: var(--purple-accent-color);
 }
 
 .telly-nav-btn-off:hover {
-	color: rgba(199, 179, 245, 1);
+	color: var(--purple-accent-color);
 	text-decoration: none;
 	cursor: default;
 }
@@ -298,24 +302,24 @@ progress {
 progress[value] {
 	-webkit-appearance: none;
 	appearance: none;
-	background-color: rgba(225, 245, 179, 1);
-	color: rgba(199, 179, 245, 1);
+	background-color: var(--green-accent-color);
+	color: var(--purple-accent-color);
 	height: 10px;
 	border-radius: 10px;
 }
   progress[value]::-webkit-progress-bar {
-	background-color: rgba(225, 245, 179, 1);
+	background-color: var(--green-accent-color);
 	border-radius: 10px;
-	color: rgba(199, 179, 245, 1);
+	color: var(--purple-accent-color);
 }
 progress::-webkit-progress-value {
 	border-radius: 10px;
-	background-color: rgba(199, 179, 245, 1);
+	background-color: var(--purple-accent-color);
 }
 
 progress::-moz-progress-bar {
 	border-radius: 10px;
-	background-color: rgba(199, 179, 245, 1);
+	background-color: var(--purple-accent-color);
 }
 
 .start-time {
@@ -346,7 +350,7 @@ input[type=range]::-webkit-slider-runnable-track {
 	height: 6px;
 	cursor: pointer;
 	box-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5), 0px 0px 1.5px rgba(13, 13, 13, 0.5);
-	background: rgba(225, 245, 179, 1);
+	background: var(--green-accent-color);
 	border-radius: 10px;
 	border: 0.3px solid rgba(0, 0, 0, 0.5);
 }
@@ -357,7 +361,7 @@ input[type=range]::-webkit-slider-thumb {
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	background: rgba(199, 179, 245, 1);
+	background: var(--purple-accent-color);
 	cursor: pointer;
 	-webkit-appearance: none;
 	margin-top: -7.3px;
@@ -372,7 +376,7 @@ input[type=range]::-moz-range-track {
 	height: 6px;
 	cursor: pointer;
 	box-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5), 0px 0px 1.5px rgba(13, 13, 13, 0.5);
-	background: rgba(225, 245, 179, 1);
+	background: var(--green-accent-color);
 	border-radius: 10px;
 	border: 0.3px solid rgba(0, 0, 0, 0.5);
 }
@@ -383,7 +387,7 @@ input[type=range]::-moz-range-thumb {
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	background: rgba(199, 179, 245, 1);
+	background: var(--purple-accent-color);
 	cursor: pointer;
 }
 
@@ -398,14 +402,14 @@ input[type=range]::-ms-track {
 }
 
 input[type=range]::-ms-fill-lower {
-	background: rgba(199, 179, 245, 1);
+	background: var(--purple-accent-color);
 	border: 0.3px solid rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 	box-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5), 0px 0px 1.5px rgba(13, 13, 13, 0.5);
 }
 
 input[type=range]::-ms-fill-upper {
-	background: rgba(225, 245, 179, 1);
+	background: var(--green-accent-color);
 	border: 0.3px solid rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 	box-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5), 0px 0px 1.5px rgba(13, 13, 13, 0.5);
@@ -417,7 +421,7 @@ input[type=range]::-ms-thumb {
 	height: 15px;
 	width: 15px;
 	border-radius: 50px;
-	background: rgba(199, 179, 245, 1);
+	background: var(--purple-accent-color);
 	cursor: pointer;
 }
 
@@ -474,4 +478,88 @@ input[type=range]:focus::-ms-fill-upper {
 .modal-close {
 	position: absolute;
     right: .75rem;
+}
+
+/* Tuning Notes Player */
+.tuner {
+	padding: 1rem;
+	width: 100%;
+    background-color: transparent;
+    border: none;
+	box-shadow: var(--box-shadow-main);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.tuner__note-box {
+
+}
+
+.tuner__button {
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	background-color: var(--green-accent-color);
+	border: 2px solid #000;
+	border-radius: 2rem;
+	transition: all .2s;
+	backface-visibility: hidden;
+}
+
+.tuner__button-text {
+	margin: 0 .5rem;
+	font-size: 3rem;
+	font-family: var(--display-font);
+	line-height: normal;
+}
+
+.tuner__button-text--E {
+	margin-top: .2rem;
+}
+
+.tuner__button-text--A {
+	margin-top: .4rem;
+}
+
+.tuner__button-text--D {
+	margin-top: .2rem;
+}
+
+/* btn wrapped in trigger div to prevent jerky hover animation when mouse is on the edge of the element */
+.tuner__button-trigger {
+	display: inline-block;
+}
+
+.tuner__button-trigger:hover > .tuner__button, 
+.tuner__button:focus {
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.25);
+	transform: translateY(-.5rem);
+}
+
+.tuner__button-trigger > .tuner__button:active {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+	transform: translateY(-.25rem);
+}
+
+.tuner__button:focus {
+	outline: none;
+}
+
+.tuner__button-play {
+	margin: 0 .5rem;
+	font-size: 3rem;
+	color: var(--purple-accent-color);
+	line-height: normal;
+}
+
+.tuner__instructions {
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}
+
+.tuner__instructions-text {
+	margin: 0;
+	font-size: 1.5rem;
 }
