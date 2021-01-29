@@ -167,62 +167,64 @@
 
 				<div class="col-12 telly-grid">
 
-					<div class="container">
-						<div class="tuner">
-						
-							<div class="tuner__note-box">
-								<div class="tuner__button-trigger">
-									<button id="bass_E_String" class="tuner__button">
-										<p class="tuner__button-text tuner__button-text--E">E</p>
-										<p class="tuner__button-play">
-											<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
-										</p>
-									</button>
-								</div>
+					<div class="tuner">
+
+						<div class="tuner__note-box">
+							<div class="tuner__button-trigger">
+								<button id="bassEStringBtn" class="tuner__button">
+									<p class="tuner__button-text tuner__button-text--E">E</p>
+									<p class="tuner__button-play">
+										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
+									</p>
+									<audio id="bassEString" class="tuner__note" src="/audio/tuning_notes/bass/bass_E_String.mp3"></audio>
+								</button>
 							</div>
+						</div>
 	
-							<div class="tuner__note-box">
-								<div class="tuner__button-trigger">
-									<button id="bass_A_String" class="tuner__button">
+						<div class="tuner__note-box">
+							<div class="tuner__button-trigger">
+								<button id="bassAStringBtn" class="tuner__button">
 									<p class="tuner__button-text tuner__button-text--A">A</p>
 									<p class="tuner__button-play">
 										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
 									</p>
+									<audio id="bassAString" class="tuner__note" src="/audio/tuning_notes/bass/bass_A_String.mp3"></audio>
 								</button>
-								</div>
 							</div>
+						</div>
 	
-							<div class="tuner__note-box">
-								<div class="tuner__button-trigger">
-									<button id="bass_D_String" class="tuner__button">
+						<div class="tuner__note-box">
+							<div class="tuner__button-trigger">
+									<button id="bassDStringBtn" class="tuner__button">
 									<p class="tuner__button-text tuner__button-text--D">D</p>
 									<p class="tuner__button-play">
 										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
 									</p>
+									<audio id="bassDString" class="tuner__note" src="/audio/tuning_notes/bass/bass_D_String.mp3"></audio>
 								</button>
-								</div>
 							</div>
+						</div>
 	
-							<div class="tuner__note-box">
-								<div class="tuner__button-trigger">
-									<button id="bass_G_String" class="tuner__button">
+						<div class="tuner__note-box">
+							<div class="tuner__button-trigger">
+								<button id="bassGStringBtn" class="tuner__button">
 									<p class="tuner__button-text tuner__button-text--G">G</p>
 									<p class="tuner__button-play">
 										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
 									</p>
+									<audio id="bassGString" class="tuner__note" src="/audio/tuning_notes/bass/bass_G_String.mp3"></audio>
 								</button>
-								</div>
-							</div>
-	
-							<div class="tuner__instructions">
-								<p class="tuner__instructions-text">
-									Listen to the notes to tune to, press the buttons to play the notes for each string.
-								</p>
 							</div>
 						</div>
-						<script src="/js/bassPlayer.js"></script>
+	
+						<div class="tuner__instructions">
+							<p class="tuner__instructions-text">
+								Listen to the notes to tune to, press the buttons to play the notes for each string.
+							</p>
+						</div>
+						
 					</div>
-
+					<script src="/js/bassPlayer.js"></script>
 										
 				</div>
 
