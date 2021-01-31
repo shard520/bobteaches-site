@@ -141,48 +141,61 @@
 
 				</div>
 
-				<div class="col-6 telly-grid">
-					
-					<!-- Telly 3 - Tuning Notes Player -->
+				<div class="col-12 telly-grid">
 
-					<!-- Audio Player -->
-					<div class="audio-player">
-						<div class="play-container text-center p-2 pt-3">
-							<div class="step-back">
-								<i class="fas fa-step-backward audio-icon" id="backBtn"></i>
+					<div class="tuner">
+
+						<div class="tuner__notes-box">
+							<div class="tuner__button-trigger">
+								<button id="ukeEStringBtn" class="tuner__button">
+									<p class="tuner__button-text tuner__button-text--G">G</p>
+									<p class="tuner__button-play">
+										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
+									</p>
+									<audio id="ukeEString" class="tuner__note" src="/audio/tuning_notes/uke/uke_G_String.mp3"></audio>
+								</button>
 							</div>
-							<div class="play-pause">
-								<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
+	
+							<div class="tuner__button-trigger">
+								<button id="ukeAStringBtn" class="tuner__button">
+									<p class="tuner__button-text tuner__button-text--C">C</p>
+									<p class="tuner__button-play">
+										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
+									</p>
+									<audio id="ukeAString" class="tuner__note" src="/audio/tuning_notes/uke/uke_C_String.mp3"></audio>
+								</button>
+							</div>
+	
+							<div class="tuner__button-trigger">
+									<button id="ukeDStringBtn" class="tuner__button">
+									<p class="tuner__button-text tuner__button-text--E">E</p>
+									<p class="tuner__button-play">
+										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
+									</p>
+									<audio id="ukeDString" class="tuner__note" src="/audio/tuning_notes/uke/uke_E_String.mp3"></audio>
+								</button>
+							</div>
+	
+							<div class="tuner__button-trigger">
+								<button id="ukeGStringBtn" class="tuner__button">
+									<p class="tuner__button-text tuner__button-text--A">A</p>
+									<p class="tuner__button-play">
+										<i class="fas fa-play-circle audio-icon" id="playBtn"></i>
+									</p>
+									<audio id="ukeGString" class="tuner__note" src="/audio/tuning_notes/uke/uke_A_String.mp3"></audio>
+								</button>
 							</div>
 						</div>
-
-						<div class="progress-container text-center p-2">
-							<progress class="" id="seekObj" value="0" max="1"></progress>
+							
+						<div class="tuner__instructions">
+							<p class="tuner__instructions-text">
+								Listen to the notes to tune to, press the buttons to play the notes for each string.
+							</p>
 						</div>
 						
-						<small class="start-time"></small>
-						<small class="end-time"></small>
-						
-						<div id="vol-container" class=" d-flex justify-content-center align-items-center">
-							<div class="vol-dwn-container vol-ctrls">
-								<i class="fa fa-volume-down audio-icon p-2" id="volDown"></i>
-							</div>
-							<input type="range" id="volume" class="vol-slider p-1" min="0" max="100" value="50" oninput="volSlider()">
-							<div class="vol-up-container vol-ctrls">
-								<i class="fa fa-volume-up audio-icon p-2" id="volUp"></i>
-							</div>
-						</div>
-
-						<p class="player-text p-2">Listen to the notes to tune to.</p>
-
-						<audio id="audioPlayer" ontimeupdate="initProgressBar()">
-							<!-- Change the src below for a new song -->
-							<source src="" type="audio/mp3">
-						</audio>
-						<script src="/js/audioPlayer.js" type="text/javascript"></script>
-
 					</div>
-					
+					<script src="/js/ukePlayer.js"></script>
+										
 				</div>
 
 			</div>

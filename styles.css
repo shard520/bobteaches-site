@@ -526,6 +526,10 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-top: .2rem;
 }
 
+.tuner__button-text--C {
+	margin-top: .4rem;
+}
+
 /* btn wrapped in trigger div to prevent jerky hover animation when mouse is on the edge of the element */
 .tuner__button-trigger {
 	display: inline-block;
