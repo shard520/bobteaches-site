@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="col nav-top-layer">
-			<a class="navbar-brand p-0 m-0" href="/index.html"><img class="brand-logo" src="/images/bob-teaches-logo.svg"><h4 class="brand-text align-middle d-none d-md-inline-block">teaches.com</h4><img class="brand-logo d-none d-md-inline-block" src="/images/bob-teaches-logo.svg"></a>
+			<a class="navbar-brand p-0 m-0" href="/index.html"><img class="brand-logo" alt="site logo - navigate to home" src="/images/bob-teaches-logo.svg"><h4 class="brand-text align-middle d-none d-md-inline-block">teaches.com</h4><img class="brand-logo d-none d-md-inline-block" alt="site logo - navigate to home" src="/images/bob-teaches-logo.svg"></a>
 		</div>
 
 		<div class="col nav-top-layer pr-0">
