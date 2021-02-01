@@ -74,11 +74,10 @@
 						<p>In many ways the ukulele behaves like a guitar and is a great starting point for little hands! Big hands are just as welcome though, just about anyone can learn the Ukulele, you just need a little time and a little dedication.</p>
 						<p>The first videos will show you how to tune and play along with the open strings. There is also a player which will let you hear the notes to tune to.</p>
 						<p>When you are in tune, head over to the next lesson to learn how to play your first scale!</p>
-						<p>The Three Tellys are:</p>
+						<p>The two Tellys are:</p>
 						<ol>
 							<li>Tuning How To</li>
 							<li>Play Along Open Strings</li>
-							<li>Audio Tuning Notes</li>
 						</ol>
 						<p>Have Fun!</p>
 						<p>Bob</p>
@@ -128,15 +127,13 @@
 				</div>
 
 				<div class="col-6 telly-grid">
-
-					<!-- Telly 2 button - Tuning Notes Video -->
-
-					<!-- Button opens a modal, change the data-target below to a unique value for new modal content -->
-					<button type="button" class="btn btn-light telly-btn" data-toggle="modal" data-target="#Tuning-Notes-Video">
-						<!-- Change the src below for a new telly image -->
-						<img class="telly-screen" src="/images/telly-images/uke_screen.svg">
+					
+					<!-- Telly 2 button -->
+					<!-- Button opens a modal -->
+					<button id="N1MxT2QCSko" type="button" class="btn btn-light telly-btn video" data-toggle="modal" data-target="#modal-1">
+						<img class="telly-screen" src="">
 						<img class="telly-outline" src="/images/telly-images/telly_outline.svg">
-						<p class="telly-text">Play Along Open Strings</p>
+						<p class="telly-text">Play along with the open strings</p>
 					</button>
 
 				</div>
@@ -191,6 +188,9 @@
 							<p class="tuner__instructions-text">
 								Listen to the notes to tune to, press the buttons to play the notes for each string.
 							</p>
+							<p class="tuner__instructions-text">
+								If you're not sure which string is which, feel free to watch the how to tune video to find out.
+							</p>
 						</div>
 						
 					</div>
@@ -205,7 +205,7 @@
 	</div>
 
 	<!-- Modal for Telly 1 -->
-	<div class="modal fade modal-backdrop-close" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt1-vid-Title" aria-hidden="true">
+	<div class="modal fade modal-backdrop-close" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="How to tune the Ukulele" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
@@ -226,8 +226,6 @@
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
 								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
 							</div>
 						</div>
 
@@ -240,8 +238,8 @@
 		</div>
 	</div>
 
-	<!-- Video Modal for Telly 2 -->
-	<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="uke-intro-pt2-vid-Title" aria-hidden="true">
+	<!-- Modal for Telly 2 -->
+	<div class="modal fade modal-backdrop-close" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="Play along with open strings - Ukulele" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-landscape" role="document">
 			<div class="modal-content bg-none">
 
@@ -258,12 +256,10 @@
 							<a class="btn telly-dropdown-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Browse Videos
 							</a>
-						  
+						
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-0"></a>
 								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-1"></a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-2"></a>
-								<a class="dropdown-item" data-dismiss="modal" data-toggle="modal" data-target="#modal-3"></a>
 							</div>
 						</div>
 
@@ -271,9 +267,7 @@
 					</div>
 
 					<button type="button" class="btn btn-outline-dark modal-close" data-dismiss="modal">Close</button>
-
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -290,8 +284,6 @@
 		//    after the API code downloads.
 		var player1;
 		var player2;
-		var player3;
-		var player4;
 
 		function onYouTubeIframeAPIReady() {
 			player1 = new YT.Player('player1', {
@@ -304,7 +296,7 @@
 			});
 
 			player2 = new YT.Player('player2', {
-				videoId: 'pqsnwppS3SU',
+				videoId: 'N1MxT2QCSko',
 				host: 'https://www.youtube-nocookie.com',
 				origin: 'https://www.bobteaches.com/',
 				playerVars: {
@@ -312,23 +304,6 @@
 				}
 			});
 
-			player3 = new YT.Player('player3', {
-				videoId: 'Sa6yJZgxJdo',
-				host: 'https://www.youtube-nocookie.com',
-				origin: 'https://www.bobteaches.com/',
-				playerVars: {
-					"rel": "0",
-				}
-			});
-
-			player4 = new YT.Player('player4', {
-				videoId: 'V6q-zPAK1SY',
-				host: 'https://www.youtube-nocookie.com',
-				origin: 'https://www.bobteaches.com/',
-				playerVars: {
-					"rel": "0",
-				}
-			});
 		};
 	</script>
 

@@ -514,7 +514,8 @@ input[type=range]:focus::-ms-fill-upper {
 	line-height: normal;
 }
 
-.tuner__button-text--E {
+.tuner__button-text--E,
+.tuner__button-text--e {
 	margin-top: .2rem;
 }
 
@@ -527,6 +528,10 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .tuner__button-text--C {
+	margin-top: .4rem;
+}
+
+.tuner__button-text--B {
 	margin-top: .4rem;
 }
 
@@ -560,10 +565,13 @@ input[type=range]:focus::-ms-fill-upper {
 .tuner__instructions {
 	width: 100%;
 	padding: 1rem;
-	text-align: center;
 }
 
 .tuner__instructions-text {
 	margin: 0;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.tuner__instructions-text:not(:last-child) {
+	margin-bottom: 0.5rem;
 }
